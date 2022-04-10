@@ -23,7 +23,6 @@
 
     .bd-placeholder-img{
         font-size: 1.125rem;
-        text-anchor: middle;
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
@@ -45,16 +44,12 @@
 
     .card-body{
         background: rgba( 255, 255, 255, 0.25 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         backdrop-filter: blur( 4px );
         -webkit-backdrop-filter: blur( 4px );
         border-radius: 10px;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
 
-    /* .card img:hover{
-        transform: rotate(6deg) scale(1.2);
-    } */
     .card{
         transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
         cursor: pointer;
