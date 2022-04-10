@@ -1,17 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
 
-body {
-    font-family: Poppins;
-}
+    body {
+        font-family: Poppins;
+    }
 
-.nav-link{
-    font-weight: 400;
-}
+    .nav-link{
+        font-weight: 400;
+    }
 
-.judul {
-    text-align: center;
-    border-bottom: 5px solid wheat;
-    width: 50%;
-    margin: auto;
-    border-radius: 0 0 10px 10px;
-}
+    @media all and (min-width: 992px) {
+        .navbar .dropdown-menu-end{ right:0; left: auto;  }
+        .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+        .navbar .nav-item:hover .nav-link{ color: rgb(3, 3, 3);  }
+        .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+        .navbar .dropdown-menu.fade-up{ top:180%;  }
+        .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+    }
+
+    .carousel-item{
+        height: 100vh;
+    }
+
+    .bd-placeholder-img{
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+        }
+    }
+
+    .judul {
+        text-align: center;
+        border-bottom: 5px solid wheat;
+        width: 50%;
+        margin: auto;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .card-body{
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+
+    /* .card img:hover{
+        transform: rotate(6deg) scale(1.2);
+    } */
+    .card{
+        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+        cursor: pointer;
+    }
+
+    .card:hover{
+        transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
+
