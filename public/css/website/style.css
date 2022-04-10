@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+body {
+    font-family: Poppins;
+}
+
+.nav-link{
+    font-weight: 400;
+}
+
+.judul {
+    text-align: center;
+    border-bottom: 5px solid wheat;
+    width: 50%;
+    margin: auto;
+    border-radius: 0 0 10px 10px;
+}
