@@ -8,6 +8,10 @@
         font-weight: 400;
     }
 
+    .nav-item {
+        margin-right: 2px;
+    }
+
     @media all and (min-width: 992px) {
         .navbar .dropdown-menu-end{ right:0; left: auto;  }
         .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }

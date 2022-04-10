@@ -23,7 +23,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto me-2">
           <li class="nav-item"><a class="nav-link" href="/beranda"> Beranda </a></li>
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" data-bs-toggle="dropdown"> Profile </a>
