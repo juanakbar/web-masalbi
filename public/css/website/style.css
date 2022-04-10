@@ -17,21 +17,14 @@
         .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
     }
 
-    .carousel-item{
-        height: 100vh;
-    }
-
-    .bd-placeholder-img{
-        font-size: 1.125rem;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-    }
-
     @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-        font-size: 3.5rem;
+        .carousel-item{
+            height: 100vh;
         }
+    }
+
+    .carousel-caption{
+        justify-content: center;
     }
 
     .judul {
@@ -57,6 +50,6 @@
 
     .card:hover{
         transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+        box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
     }
 
