@@ -27,14 +27,31 @@
           <li class="nav-item"><a class="nav-link" href="/beranda"> Beranda </a></li>
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" data-bs-toggle="dropdown"> Profile </a>
-            <ul class="dropdown-menu dropdown-menu-start fade-down">
-              <li><a class="dropdown-item" href="#"> Sejarah Madrasah</a></li>
-              <li><a class="dropdown-item" href="#"> Tentang Madrasah</a></li>
-              <li><a class="dropdown-item" href="#"> Tujuan Madrasah</a></li>
-              <li><a class="dropdown-item" href="#"> Target Madrasah</a></li>
-            </ul>
+              <ul class="dropdown-menu dropdown-menu-start fade-down">
+                <li><a class="dropdown-item" href="#"> Sambutan Kepala Sekolah</a></li>
+                <li><a class="dropdown-item" href="#"> Sejarah</a></li>
+                <li><a class="dropdown-item" href="#"> Visi & Misi</a></li>
+                <li><a class="dropdown-item" href="#"> Tenaga Pendidik</a></li>
+                <li><a class="dropdown-item" href="#"> Sarana Prasana</a></li>
+              </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#"> Profile </a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-bs-toggle="dropdown"> Berita </a>
+              <ul class="dropdown-menu dropdown-menu-start fade-down">
+                <li><a class="dropdown-item" href="#"> Berita Terbaru</a></li>
+                <li><a class="dropdown-item" href="#"> Info Sekolah</a></li>
+                <li><a class="dropdown-item" href="#"> Galery</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" data-bs-toggle="dropdown"> Jurusan </a>
+              <ul class="dropdown-menu dropdown-menu-start fade-down">
+                <li><a class="dropdown-item" href="#"> IPA</a></li>
+                <li><a class="dropdown-item" href="#"> IPS</a></li>
+              </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#"> Prestasi </a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> Kontak </a></li>
         </ul>
       </div>
     </div>
