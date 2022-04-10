@@ -11,7 +11,7 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="img/portal/no-image.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption position-absolute top-50 start-50 translate-middle mt-5">
+      <div class="carousel-caption">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
         <a href="#" class="btn btn-primary">Read More</a>
@@ -19,7 +19,7 @@
     </div>
     <div class="carousel-item">
       <img src="img/portal/no-image.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption position-absolute top-50 start-50 translate-middle mt-5">
+      <div class="carousel-caption ">
         <h5>Second slide label</h5>
         <p>Some representative placeholder content for the second slide.</p>
         <a href="#" class="btn btn-primary">Read More</a>
@@ -27,7 +27,7 @@
     </div>
     <div class="carousel-item">
       <img src="img/website/maxresdefault.jpeg" class="d-block w-100" alt="...">
-      <div class="carousel-caption position-absolute top-50 start-50 translate-middle mt-5">
+      <div class="carousel-caption">
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>
         <a href="#" class="btn btn-primary">Read More</a>
@@ -44,12 +44,12 @@
   </button>
 </div>
 
-<div class="container mt-5 ">
-  <div class="row">
-    <h1 class="judul">Berita</h1>
+<div class="container mt-5" >
+  <div class="row judul">
+    <h1 class="">Berita</h1>
   </div>
   <div class="row mt-3">
-    <div class="col-sm-6 col-md-4 mt-2 mb-3">
+    <div class="col-sm-6 col-md-4 mt-2 mb-3" data>
       <div class="card">
         <img src="img/portal/no-image.png" class="card-img-top" alt="...">
         <div class="card-body">
@@ -71,7 +71,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4 mt-2 mb-3">
+    <div class="col-sm-6 col-md-4 mt-2 mb-3" data-aos="fade-in">
       <div class="card">
         <img src="img/portal/no-image.png" class="card-img-top" alt="...">
         <div class="card-body">

@@ -21,21 +21,41 @@
         .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
     }
 
-    @media (min-width: 768px) {
-        .carousel-item{
-            height: 100vh;
-        }
+    .carousel-item{
+        height: 100vh;
+        min-height: 300px;
+        background: no-repeat scroll center scroll;
+        background-size: cover;
     }
 
+    .carousel-item::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        opacity: 50%;
+    }
     .carousel-caption{
-        justify-content: center;
+        bottom: 180px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
 
+     .carousel-caption h5{
+         font-size: 32px;
+         font-weight: 600;
+     }
     .judul {
         text-align: center;
         border-bottom: 5px solid wheat;
         width: 50%;
         margin: auto;
+        margin-top: 150px;
         border-radius: 0 0 10px 10px;
     }
 
