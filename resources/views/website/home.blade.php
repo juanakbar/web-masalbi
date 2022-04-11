@@ -26,7 +26,7 @@
       </div>
     </div>
     <div class="carousel-item">
-      <img src="img/website/maxresdefault.jpeg" class="d-block w-100" alt="...">
+      <img src="img/portal/no-image.png" class="d-block w-100" alt="...">
       <div class="carousel-caption">
         <h5>Third slide label</h5>
         <p>Some representative placeholder content for the third slide.</p>
