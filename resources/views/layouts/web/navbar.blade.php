@@ -9,11 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/website/style.css">
     <link rel="shortcut icon" href="img/portal/logo-2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>MAS AL-BIDAYAH</title>
   </head>
   <body>
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top">
     <div class="container">
       <div class="navbar-brand">
         <img src="img/portal/logo.png" alt="" width="40" height="40" class="d-inline-block align-center" style="font-weight: 600">
@@ -23,8 +24,8 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <ul class="navbar-nav ms-auto me-2">
-          <li class="nav-item"><a class="nav-link" href="/beranda"> Beranda </a></li>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="/beranda"> Beranda </a></li>
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" data-bs-toggle="dropdown"> Profile </a>
               <ul class="dropdown-menu dropdown-menu-start fade-down">
@@ -64,6 +65,13 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration : 1200,
+        easing: 'ease-in'
+      });
+      
+    </script>
   </body>
 </html>

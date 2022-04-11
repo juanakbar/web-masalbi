@@ -8,7 +8,7 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <div class="carousel-inner">
+  <div class="carousel-inner mt-3">
     <div class="carousel-item active">
       <img src="img/portal/no-image.png" class="d-block w-100" alt="...">
       <div class="carousel-caption">
@@ -44,12 +44,12 @@
   </button>
 </div>
 
-<div class="container mt-5" >
+<div class="container mt-5" data-aos="slide-up">
   <div class="row judul">
     <h1 class="">Berita</h1>
   </div>
   <div class="row mt-3">
-    <div class="col-sm-6 col-md-4 mt-2 mb-3" data>
+    <div class="col-sm-6 col-md-4 mt-2 mb-3">
       <div class="card">
         <img src="img/portal/no-image.png" class="card-img-top" alt="...">
         <div class="card-body">
@@ -71,7 +71,7 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4 mt-2 mb-3" data-aos="fade-in">
+    <div class="col-sm-6 col-md-4 mt-2 mb-3">
       <div class="card">
         <img src="img/portal/no-image.png" class="card-img-top" alt="...">
         <div class="card-body">
@@ -82,11 +82,9 @@
         </div>
       </div>
     </div>
-    <div class="row text-center">
-      <div class="col-sm-12 pt-4">
+      <div class="col-sm text-center mb-4 mt-5">
         <a href="#" class="btn btn-outline-primary"> Tampilkan Semua Berita </a>
       </div>
-    </div>
   </div>
 </div>
 @endsection
