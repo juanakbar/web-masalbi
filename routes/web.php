@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BeritaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,14 @@ Route::get('/', function () {
     return view('portal');
 });
 
-Route::get('/beranda', function () {
-    return view('website.home');
+// Route::get('/beranda', function () {
+//     return view('website.home',[
+//         "title"=>"Home",
+//     ]);
+// });
+
+Route::get('/beranda/berita', function () {
+    return view('website.berita');
 });
+
+Route::get('/beranda', [BeritaController::class, 'index']);

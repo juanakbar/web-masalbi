@@ -9,9 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     {{-- Font Awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {{-- Icon Bootstrap --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    {{-- custom css --}}
     <link rel="stylesheet" href="/css/website/style.css">
-    <link rel="shortcut icon" href="img/portal/logo-2.png" type="image/x-icon">
+    {{-- Favicon --}}
+    <link rel="shortcut icon" href="img/portal/logo-2.png" type="image/x-icon" >
     {{-- AOS ANIMATION --}}
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     {{-- OWL CAROUSEL --}}
@@ -32,9 +35,9 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="/beranda"><i class="fa fa-home me-2"></i> Beranda </a></li>
+          <li class="nav-item"><a class="nav-link {{($title === "Home") ? 'active' : ''}}" href="/beranda"><i class="fa fa-home me-2"></i> Beranda </a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#" data-bs-toggle="dropdown"><i class="fa fa-user me-2"></i> Profile </a>
+            <a class="nav-link {{($title === "Profile") ? 'active' : ''}}" href="#" data-bs-toggle="dropdown"><i class="fa fa-user me-2"></i> Profile </a>
               <ul class="dropdown-menu dropdown-menu-start fade-down">
                 <li><a class="dropdown-item" href="#"><i class="bi bi-file-earmark-richtext me-2"></i> Sejarah Singkat</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa-regular fa-address-book me-2"></i> Profile Madrasah</a></li>
@@ -45,7 +48,7 @@
               </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#" data-bs-toggle="dropdown"><i class="fa fa-building me-2"></i> Akademik </a>
+            <a class="nav-link {{($title === "Akademik") ? 'active' : ''}}" href="#" data-bs-toggle="dropdown"><i class="fa fa-building me-2"></i> Akademik </a>
               <ul class="dropdown-menu dropdown-menu-start fade-down">
                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-copy me-2"></i> Program Studi</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-pen me-2"></i> Konsep Pendidikan</a></li>
@@ -56,7 +59,7 @@
               </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#" data-bs-toggle="dropdown"><i class="fa fa-users fa-sm me-2"></i> Kesiswaan </a>
+            <a class="nav-link {{($title === "Kesiswaan") ? 'active' : ''}}" href="#" data-bs-toggle="dropdown"><i class="fa fa-users fa-sm me-2"></i> Kesiswaan </a>
               <ul class="dropdown-menu dropdown-menu-start fade-down">
                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-people-group fa-sm me-2"></i> Pengelolaan Peserta Didik</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-palette me-2"></i> Esktrakurikulrt</a></li>
@@ -65,7 +68,7 @@
               </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-boxes-stacked me-2"></i> Aplikasi </a>
+            <a class="nav-link {{($title === "Aplikasi") ? 'active' : ''}}" href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-boxes-stacked me-2"></i> Aplikasi </a>
               <ul class="dropdown-menu dropdown-menu-start fade-down">
                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-laptop-code me-2"></i> E-Learning</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-swatchbook me-2"></i> Perpustakaan</a></li>
@@ -75,7 +78,7 @@
 
               </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-images me-2"></i> Galery </a></li>
+          <li class="nav-item"><a class="nav-link {{($title === "Galery") ? 'active' : ''}}" href="#"><i class="fa-solid fa-images me-2"></i> Galery </a></li>
         </ul>
       </div>
     </div>
@@ -86,23 +89,16 @@
 
     <footer class="footer-32892 pb-0">
       <div class="site-section">
-        <div class="container">
-    
-          
+        <div class="container">          
           <div class="row">
     
             <div class="col-md pr-md-5 mb-4 mb-md-0">
               <h3>About Us</h3>
               <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam itaque unde facere repellendus, odio et iste voluptatum aspernatur ratione mollitia tempora eligendi maxime est, blanditiis accusamus. Incidunt, aut, quis!</p>
               <ul class="list-unstyled quick-info mb-4">
-                <li><a href="#" class="d-flex align-items-center"><span class="icon mr-3 icon-phone"></span> +1 291 3912 329</a></li>
-                <li><a href="#" class="d-flex align-items-center"><span class="icon mr-3 icon-envelope"></span> info@gmail.com</a></li>
+                <li><i class="fa-solid fa-phone me-2"></i><a href="#" class="d-flex align-items-center"> +1 291 3912 329</a></li>
+                <li><i class="fa-solid fa-envelope me-2"></i><a href="#" class="d-flex align-items-center"> info@gmail.com</a></li>
               </ul>
-    
-              <form action="#" class="subscribe">
-                <input type="text" class="form-control" placeholder="Enter your e-mail">
-                <input type="submit" class="btn btn-submit" value="Send">
-              </form>
             </div>
             <div class="col-md mb-4 mb-md-0">
               <h3>Latest Tweet</h3>
@@ -121,8 +117,6 @@
                 </li>
               </ul>
             </div>
-    
-    
             <div class="col-md-3 mb-4 mb-md-0">
               <h3>Instagram</h3>
               <div class="row gallery">
@@ -135,26 +129,7 @@
                   <a href="#"><img src="img/portal/no-image.png" alt="Image" class="img-fluid"></a>
                 </div>
               </div>
-            </div>
-            
-            <div class="col-12">
-              <div class="py-5 footer-menu-wrap d-md-flex align-items-center">
-                <ul class="list-unstyled footer-menu mr-auto">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Our works</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Blog</a></li>
-                  <li><a href="#">Contacts</a></li>
-                </ul>
-                <div class="site-logo-wrap ml-auto">
-                  <a href="#" class="site-logo">
-                    Colorlib
-                  </a>
-                </div>
-              </div>
-            </div>
-            
+            </div>            
           </div>
         </div>
       </div>

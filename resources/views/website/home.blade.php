@@ -49,44 +49,22 @@
     <p>Berita</p>
   </header>
   <div class="row">
+    @foreach ($data as $item)
     <div class="col-sm-6 col-md-4 mt-2 mb-3">
       <div class="card">
         <img src="img/portal/no-image.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h5 class="card-title">{{$item -> judul}}</h5>
+          <p class="card-text"> {{$item -> excerpt}} </p>
           <a href="#" class="btn btn-outline-primary"> Read More</a>
           <hr class="hr-content">
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <p class="card-text"><small class="text-muted">{{$item -> created_at}}</small></p>
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4 mt-2 mb-3">
-      <div class="card">
-        <img src="img/portal/no-image.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <a href="#" class="btn btn-outline-primary"> Read More</a>
-          <hr class="hr-content">
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 mt-2 mb-3">
-      <div class="card">
-        <img src="img/portal/no-image.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <a href="#" class="btn btn-outline-primary"> Read More</a>
-          <hr class="hr-content">
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-        </div>
-      </div>
-    </div>
+    @endforeach
       <div class="col-sm text-center mb-4 mt-5">
-        <a href="#" class="btn btn-outline-primary"> Tampilkan Semua Berita </a>
+        <a href="/beranda/berita" class="btn btn-outline-primary"> Tampilkan Semua Berita </a>
       </div>
   </div>
 </div>
