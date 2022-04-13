@@ -7,6 +7,10 @@
         /* background-color: white; */
         backdrop-filter: blur(5px);
     }
+
+    /* .dropdown-item{
+      backdrop-filter: blur(5px) !important;
+    } */
     .nav-link{
         font-weight: 400;
     }

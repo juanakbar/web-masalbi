@@ -7,12 +7,16 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    {{-- Font Awesome --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/website/style.css">
     <link rel="shortcut icon" href="img/portal/logo-2.png" type="image/x-icon">
     {{-- AOS ANIMATION --}}
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     {{-- OWL CAROUSEL --}}
     <link rel="stylesheet" href="/css/owl/owl.carousel.min.css">
+    
     <title>MAS AL-BIDAYAH</title>
   </head>
   <body>
@@ -28,48 +32,50 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="/beranda"> Beranda </a></li>
+          <li class="nav-item"><a class="nav-link active" href="/beranda"><i class="fa fa-home me-2"></i> Beranda </a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#" data-bs-toggle="dropdown"> Profile </a>
+            <a class="nav-link" href="#" data-bs-toggle="dropdown"><i class="fa fa-user me-2"></i> Profile </a>
               <ul class="dropdown-menu dropdown-menu-start fade-down">
-                <li><a class="dropdown-item" href="#"> Sejarah Singkat</a></li>
-                <li><a class="dropdown-item" href="#"> Profile Madrasah</a></li>
-                <li><a class="dropdown-item" href="#"> Struktur Organisasi</a></li>
-                <li><a class="dropdown-item" href="#"> Sarana Prasana</a></li>
-                <li><a class="dropdown-item" href="#"> Kerja Sama</a></li>
+                <li><a class="dropdown-item" href="#"><i class="bi bi-file-earmark-richtext me-2"></i> Sejarah Singkat</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-regular fa-address-book me-2"></i> Profile Madrasah</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-group fa-xs me-2"></i> Personil Madrasah</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-code-merge me-2"></i> Struktur Organisasi</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-hotel me-2"></i> Sarana Prasana</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-handshake fa-sm me-2"></i> Kerja Sama</a></li>
               </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#" data-bs-toggle="dropdown"> Akademik </a>
+            <a class="nav-link" href="#" data-bs-toggle="dropdown"><i class="fa fa-building me-2"></i> Akademik </a>
               <ul class="dropdown-menu dropdown-menu-start fade-down">
-                <li><a class="dropdown-item" href="#"> Program Studi</a></li>
-                <li><a class="dropdown-item" href="#"> Konsep Pendidikan</a></li>
-                <li><a class="dropdown-item" href="#"> Kurikulum</a></li>
-                <li><a class="dropdown-item" href="#"> Peraturan Akademik</a></li>
-                <li><a class="dropdown-item" href="#"> Kalaender Akademik</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-copy me-2"></i> Program Studi</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-file-pen me-2"></i> Konsep Pendidikan</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-book me-2"></i> Kurikulum</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-list-check me-2"></i> Peraturan Akademik</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-calendar me-2"></i> Kalaender Akademik</a></li>
 
               </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#" data-bs-toggle="dropdown"> Kesiswaan </a>
+            <a class="nav-link" href="#" data-bs-toggle="dropdown"><i class="fa fa-users fa-sm me-2"></i> Kesiswaan </a>
               <ul class="dropdown-menu dropdown-menu-start fade-down">
-                <li><a class="dropdown-item" href="#"> Esktrakurikuler</a></li>
-                <li><a class="dropdown-item" href="#"> Web Osis</a></li>
-                <li><a class="dropdown-item" href="#"> Menjadi Alumnus</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-people-group fa-sm me-2"></i> Pengelolaan Peserta Didik</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-palette me-2"></i> Esktrakurikulrt</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-building-columns me-2"></i> Web Osis</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-code-branch me-2"></i> Menjadi Alumnus</a></li>
               </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#" data-bs-toggle="dropdown"> Aplikasi </a>
+            <a class="nav-link" href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-boxes-stacked me-2"></i> Aplikasi </a>
               <ul class="dropdown-menu dropdown-menu-start fade-down">
-                <li><a class="dropdown-item" href="#"> E-Learning</a></li>
-                <li><a class="dropdown-item" href="#"> Perpustakaan</a></li>
-                <li><a class="dropdown-item" href="#"> Rapot Digital</a></li>
-                <li><a class="dropdown-item" href="#"> CBT Seleksi Masuk</a></li>
-                <li><a class="dropdown-item" href="#"> Web PPDB</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-laptop-code me-2"></i> E-Learning</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-swatchbook me-2"></i> Perpustakaan</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-book-atlas me-2"></i> Rapot Digital</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-check me-2"></i> CBT Seleksi Masuk</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-address-card me-2"></i> Web PPDB</a></li>
 
               </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#"> Galery </a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-images me-2"></i> Galery </a></li>
         </ul>
       </div>
     </div>
@@ -166,5 +172,6 @@
     {{-- Script Owl --}}
     {{-- <script src="js/jquery.min.js"></script> --}}
     <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   </body>
 </html>

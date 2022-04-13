@@ -1,6 +1,6 @@
 @extends('layouts.web.navbar')
 @section('content')
-<div id="carouselExampleCaptions" class="carousel slide mt-5" data-bs-ride="carousel">
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -123,6 +123,9 @@
             <h3 class="post-title">Sore di Kintsugi diisi oleh lagu-lagu John Mayer, Alex Turner dalam album Submarine dan lagu-lagu lainnya, tentunya waktu itu juga ditemani dengan segelas Cold Portamento untuk melengkapi keseruan acara hari itu.</h3>
             <a href="#" class="mt-auto btn btn-primary"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
           </div>
+        </div>
+        <div class="col-sm text-center mb-4 mt-5">
+          <a href="#" class="btn btn-outline-primary"> Tampilkan Semua Prestasi </a>
         </div>
       </div>
     </div>
