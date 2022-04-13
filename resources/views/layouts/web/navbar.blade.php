@@ -12,9 +12,9 @@
     {{-- Icon Bootstrap --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     {{-- custom css --}}
-    <link rel="stylesheet" href="/css/website/style.css">
+    <link rel="stylesheet" href="../css/website/style.css">
     {{-- Favicon --}}
-    <link rel="shortcut icon" href="img/portal/logo-2.png" type="image/x-icon" >
+    <link rel="shortcut icon" href="/img/portal/logo-2.png" type="image/x-icon" >
     {{-- AOS ANIMATION --}}
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     {{-- OWL CAROUSEL --}}
@@ -23,11 +23,11 @@
     <title>MAS AL-BIDAYAH</title>
   </head>
   <body>
-<header>
+
   <nav class="navbar navbar-expand-lg navbar-light shadow fixed-top">
     <div class="container">
       <div class="navbar-brand">
-        <img src="img/portal/logo.png" alt="" width="40" height="40" class="d-inline-block align-center" style="font-weight: 600">
+        <img src="/img/portal/logo.png" alt="" width="40" height="40" class="d-inline-block align-center" style="font-weight: 600">
         MAS AL-BIDAYAH
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,7 +75,6 @@
                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-book-atlas me-2"></i> Rapot Digital</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-user-check me-2"></i> CBT Seleksi Masuk</a></li>
                 <li><a class="dropdown-item" href="#"><i class="fa-solid fa-address-card me-2"></i> Web PPDB</a></li>
-
               </ul>
           </li>
           <li class="nav-item"><a class="nav-link {{($title === "Galery") ? 'active' : ''}}" href="#"><i class="fa-solid fa-images me-2"></i> Galery </a></li>
@@ -83,57 +82,55 @@
       </div>
     </div>
   </nav>
-</header>
-    
-    @yield('content')
 
-    <footer class="footer-32892 pb-0">
-      <div class="site-section">
-        <div class="container">          
-          <div class="row">
-    
-            <div class="col-md pr-md-5 mb-4 mb-md-0">
-              <h3>About Us</h3>
-              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam itaque unde facere repellendus, odio et iste voluptatum aspernatur ratione mollitia tempora eligendi maxime est, blanditiis accusamus. Incidunt, aut, quis!</p>
-              <ul class="list-unstyled quick-info mb-4">
-                <li><i class="fa-solid fa-phone me-2"></i><a href="#" class="d-flex align-items-center"> +1 291 3912 329</a></li>
-                <li><i class="fa-solid fa-envelope me-2"></i><a href="#" class="d-flex align-items-center"> info@gmail.com</a></li>
-              </ul>
-            </div>
-            <div class="col-md mb-4 mb-md-0">
-              <h3>Latest Tweet</h3>
-              <ul class="list-unstyled tweets">
-                <li class="d-flex">
-                  <div class="mr-4"><span class="icon icon-twitter"></span></div>
-                  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere unde omnis veniam porro excepturi.</div>
-                </li>
-                <li class="d-flex">
-                  <div class="mr-4"><span class="icon icon-twitter"></span></div>
-                  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere unde omnis veniam porro excepturi.</div>
-                </li>
-                <li class="d-flex">
-                  <div class="mr-4"><span class="icon icon-twitter"></span></div>
-                  <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere unde omnis veniam porro excepturi.</div>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-3 mb-4 mb-md-0">
-              <h3>Instagram</h3>
-              <div class="row gallery">
-                <div class="col-6">
-                  <a href="#"><img src="img/portal/no-image.png" alt="Image" class="img-fluid"></a>
-                  <a href="#"><img src="img/portal/no-image.png" alt="Image" class="img-fluid"></a>
-                </div>
-                <div class="col-6">
-                  <a href="#"><img src="img/portal/no-image.png" alt="Image" class="img-fluid"></a>
-                  <a href="#"><img src="img/portal/no-image.png" alt="Image" class="img-fluid"></a>
-                </div>
-              </div>
-            </div>            
-          </div>
+      @yield('content')
+<footer class="footer-32892 pb-0">
+  <div class="site-section">
+    <div class="container">          
+      <div class="row">
+
+        <div class="col-md pr-md-5 mb-4 mb-md-0">
+          <h3>About Us</h3>
+          <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam itaque unde facere repellendus, odio et iste voluptatum aspernatur ratione mollitia tempora eligendi maxime est, blanditiis accusamus. Incidunt, aut, quis!</p>
+          <ul class="list-unstyled quick-info mb-4">
+            <li><i class="fa-solid fa-phone me-2"></i><a href="#" class="d-flex align-items-center"> +1 291 3912 329</a></li>
+            <li><i class="fa-solid fa-envelope me-2"></i><a href="#" class="d-flex align-items-center"> info@gmail.com</a></li>
+          </ul>
         </div>
+        <div class="col-md mb-4 mb-md-0">
+          <h3>Latest Tweet</h3>
+          <ul class="list-unstyled tweets">
+            <li class="d-flex">
+              <div class="mr-4"><span class="icon icon-twitter"></span></div>
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere unde omnis veniam porro excepturi.</div>
+            </li>
+            <li class="d-flex">
+              <div class="mr-4"><span class="icon icon-twitter"></span></div>
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere unde omnis veniam porro excepturi.</div>
+            </li>
+            <li class="d-flex">
+              <div class="mr-4"><span class="icon icon-twitter"></span></div>
+              <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere unde omnis veniam porro excepturi.</div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-4 mb-md-0">
+          <h3>Instagram</h3>
+          <div class="row gallery">
+            <div class="col-6">
+              <a href="#"><img src="/img/portal/no-image.png" alt="Image" class="img-fluid"></a>
+              <a href="#"><img src="/img/portal/no-image.png" alt="Image" class="img-fluid"></a>
+            </div>
+            <div class="col-6">
+              <a href="#"><img src="/img/portal/no-image.png" alt="Image" class="img-fluid"></a>
+              <a href="#"><img src="/img/portal/no-image.png" alt="Image" class="img-fluid"></a>
+            </div>
+          </div>
+        </div>            
       </div>
-    </footer>
+    </div>
+  </div>
+</footer>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

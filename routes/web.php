@@ -25,7 +25,10 @@ Route::get('/', function () {
 // });
 
 Route::get('/beranda/berita', function () {
-    return view('website.berita');
+    return view('website.berita', [
+        "title" => "Berita"
+    ] );
 });
 
 Route::get('/beranda', [BeritaController::class, 'index']);
+Route::get('/beranda/berita', [BeritaController::class, 'berita']);
