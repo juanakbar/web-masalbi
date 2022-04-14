@@ -30,8 +30,9 @@ class BeritaController extends Controller
     
     public function show($slug)
     {
-        return view('website.berita.single', [
-            'show' => Berita::findOrFail($slug)
+        return view('website.Single', [
+            'berita' => Berita::find($slug),
+            "title"  => "Home"
         ]);
     }
 }
