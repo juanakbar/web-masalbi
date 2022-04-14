@@ -418,3 +418,8 @@
       font-size: 20px; }
 
 
+      .bt {
+        border-bottom: 1px solid #f88020 !important;
+        border-top: 1px solid #f88020 !important;
+
+      }
