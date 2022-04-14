@@ -13,17 +13,24 @@ class BeritaController extends Controller
         return view('website.home',
         [
             'data'=>$data,
-            "title"=> "Home"
+            "title"=> "Home",
         ]);
     }
 
     public function berita()
     {   
-        $data = Berita::paginate(3);
+        $data = Berita::All();
         return view('website.berita',
         [
             'data'=>$data,
-            "title"=> "Berita"
+            "title"=> "Berita",
+        ]);
+    }
+    
+    public function show($slug)
+    {
+        return view('website/berita/{slug}', [
+            "show" => Berita::find($slug)
         ]);
     }
 }

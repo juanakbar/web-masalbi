@@ -23,10 +23,100 @@
         border: none;
     }
 
+
     .berita{
       margin-top: 100px !important;
     }
     
+    .pagination-outer {
+      text-align: center
+  }
+ 
+  .pagination {
+      background-color: #fff;
+      border-radius: 25px !important;
+      overflow: hidden;
+      border: none !important
+  }
+ 
+  a:focus,
+  a:active {
+      outline: none !important;
+      box-shadow: none !important
+  }
+ 
+  .fa {
+      font-size: 11px;
+      vertical-align: middle !important;
+      color: black
+  }
+ 
+  .pagination li.active .fa {
+      color: #fff !important
+  }
+ 
+  .pagination li a.page-link {
+      color: #505050;
+      background-color: transparent;
+      font-size: 17px;
+      font-weight: 600;
+      padding: 17px 25px;
+      border: none;
+      transition: all 0.3s ease 0s
+  }
+ 
+  .fa-home {
+      transform: scale(1.4, 1.4)
+  }
+ 
+  .pagination li:last-child a.page-link {
+      border: none
+  }
+ 
+  .pagination li.active a.page-link,
+  .pagination li a.page-link:hover,
+  .pagination li.active a.page-link:hover {
+      background-color: transparent
+  }
+ 
+  .pagination li a.page-link:after {
+      content: '';
+      background-color: #42A5F5 !important;
+      height: 100%;
+      width: 100%;
+      transform: scaleY(0);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      transition: all 0.3s
+  }
+ 
+  .pagination li.active a.page-link:after,
+  .pagination li a.page-link:hover:after,
+  .pagination li.active a.page-link:hover:after {
+      transform: scaleY(1);
+      border-radius: 25px !important
+  }
+ 
+  @media (max-width: 767px) {
+      .pagination li a.page-link {
+          padding: 11px 8px !important
+      }
+ 
+      .fa {
+          font-size: 9px !important
+      }
+ 
+      li a {
+          font-size: 12px !important
+      }
+ 
+      .page-item+.page-item {
+          padding-left: 0 !important
+      }
+  }
+
     @media all and (min-width: 992px) {
         .navbar .dropdown-menu-end{ right:0; left: auto;  }
         .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }

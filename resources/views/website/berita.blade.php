@@ -1,7 +1,6 @@
 @extends('layouts.web.navbar')
-
 @section('content')
-<div class="container mt-5" data-aos="slide-up">
+<div class="container berita mt-2">
     <header class="section-header">
       <p>Berita</p>
     </header>
@@ -13,13 +12,14 @@
           <div class="card-body">
             <h5 class="card-title">{{$item -> judul}}</h5>
             <p class="card-text"> {{$item -> excerpt}} </p>
-            <a href="#" class="btn btn-outline-primary"> Read More</a>
+            <a href="/berita/{{$item -> id}}" class="btn btn-outline-primary"> Read More</a>
             <hr class="hr-content">
             <p class="card-text"><small class="text-muted">{{$item -> created_at}}</small></p>
           </div>
         </div>
       </div>
       @endforeach
+      
     </div>
   </div>
 @endsection

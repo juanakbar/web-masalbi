@@ -12,7 +12,7 @@
     {{-- Icon Bootstrap --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     {{-- custom css --}}
-    <link rel="stylesheet" href="../css/website/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     {{-- Favicon --}}
     <link rel="shortcut icon" href="/img/portal/logo-2.png" type="image/x-icon" >
     {{-- AOS ANIMATION --}}
@@ -144,6 +144,7 @@
     {{-- Script Owl --}}
     {{-- <script src="js/jquery.min.js"></script> --}}
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
   </body>
 </html>

@@ -30,5 +30,8 @@ Route::get('/beranda/berita', function () {
     ] );
 });
 
+
+
 Route::get('/beranda', [BeritaController::class, 'index']);
 Route::get('/beranda/berita', [BeritaController::class, 'berita']);
+Route::get('/beranda/berita/{slug}', [BeritaController::class, 'show']);
