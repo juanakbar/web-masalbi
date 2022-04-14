@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\PrestasiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,19 +26,18 @@ Route::get('/', function () {
 //     ]);
 // });
 
-Route::get('/beranda/berita', function () {
-    return view('website.berita', [
-        "title" => "Berita"
-    ] );
-});
- 
-// Route::get('berita/{slug}', function ($slug) {
-//     return view('website.single-berita',[
-//         "title" => "Single Post"
-//     ]);
+// Route::get('/beranda/berita', function () {
+//     return view('website.berita', [
+//         "title" => "Berita"
+//     ] );
 // });
 
 
-Route::get('/beranda', [BeritaController::class, 'index']);
-Route::get('/beranda/berita', [BeritaController::class, 'berita']);
-Route::get('/berita/{berita:slug}', [BeritaController::class, 'show']);
+Route::get('/beranda', [HomeController::class, 'index']);
+Route::get('/beranda', [HomeController::class, 'prestasi']);
+// Route::get('/berita/{berita:slug}', [HomeController::class, 'show']);
+
+
+// Route::get('/beranda', [PrestasiController::class, 'index']);
+// Route::get('/beranda/prestasi', [PrestasiController::class, 'prestasi']);
+// Route::get('/berita/{prestasi:slug}', [PrestasiController::class, 'show']);

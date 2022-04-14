@@ -10,21 +10,19 @@ class BeritaController extends Controller
 {
     public function index()
     {   
-        $data = Berita::paginate(3);
         return view('website.home',
         [
-            'data'=>$data,
+            'beritas'=>Berita::paginate(3),
             "title"=> "Home",
         ]);
     }
 
     public function berita()
     {   
-        $data = Berita::All();
         return view('website.berita',
         [
-            'data'=>$data,
-            "title"=> "Berita",
+            'beritas'=>Berita::all(),
+            "title"=> "Home",
         ]);
     }
     
