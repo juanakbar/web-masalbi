@@ -29,7 +29,12 @@ Route::get('/beranda/berita', function () {
         "title" => "Berita"
     ] );
 });
-
+ 
+// Route::get('berita/{slug}', function ($slug) {
+//     return view('website.single-berita',[
+//         "title" => "Single Post"
+//     ]);
+// });
 
 
 Route::get('/beranda', [BeritaController::class, 'index']);
