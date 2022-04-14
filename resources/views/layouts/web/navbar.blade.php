@@ -84,7 +84,7 @@
   </nav>
 
       @yield('content')
-<footer class="footer-32892 pb-0">
+<footer id="sticky-footer" class="footer-32892 pb-0 flex-shrink-0 py-4 bg-dark">
   <div class="site-section">
     <div class="container">          
       <div class="row">

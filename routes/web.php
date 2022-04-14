@@ -39,4 +39,4 @@ Route::get('/beranda/berita', function () {
 
 Route::get('/beranda', [BeritaController::class, 'index']);
 Route::get('/beranda/berita', [BeritaController::class, 'berita']);
-Route::get('/berita/{slug}', [BeritaController::class, 'show']);
+Route::get('/berita/{berita:slug}', [BeritaController::class, 'show']);

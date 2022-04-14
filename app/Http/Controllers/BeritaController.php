@@ -28,10 +28,10 @@ class BeritaController extends Controller
         ]);
     }
     
-    public function show($slug)
+    public function show(Berita $berita)
     {
         return view('website.Single', [
-            'berita' => Berita::find($slug),
+            'berita' => $berita,
             "title"  => "Home"
         ]);
     }
