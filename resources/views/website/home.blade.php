@@ -49,16 +49,16 @@
     <p>Berita</p>
   </header>
   <div class="row">
-    @foreach ($data as $item)
+    @foreach ($beritas as $berita)
     <div class="col-sm-6 col-md-4 mt-2 mb-3">
       <div class="card">
         <img src="img/portal/no-image.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">{{$item -> judul}}</h5>
-          <p class="card-text"> {{$item -> excerpt}} </p>
+          <h5 class="card-title">{{$berita -> judul}}</h5>
+          <p class="card-text"> {{$berita -> excerpt}} </p>
           <a href="#" class="btn btn-outline-primary"> Read More</a>
           <hr class="hr-content">
-          <p class="card-text"><small class="text-muted">{{$item -> created_at}}</small></p>
+          <p class="card-text"><small class="text-muted">{{$berita -> created_at}}</small></p>
         </div>
       </div>
     </div>
@@ -75,38 +75,23 @@
       <header class="section-header">
         <p>Prestasi</p>
       </header>
-      <div class="row">
-        <div class="col-sm-6 col-md-4 mt-2 mb-3">
-          <div class="post-box">
-            <div class="post-img"><img src="img/portal/no-image.png" class="img-fluid" alt=""></div>
-            <span class="post-date">December 12, 2021</span>
-            <h3 class="post-title">Sore hari itu di Kintsugi terasa amat spesial, teman-teman berkumpul menyaksikan secret gig yang menampilkan istimewanya Nadin Amizah.</h3>
-            <a href="#" class="btn btn-primary mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+      @foreach ($prestasis as $prestasi)
+      <div class="container recent-blog-posts mt-3 mb-5">
+          <div class="col-sm-6 col-md-4 mt-2 mb-3">
+            <div class="post-box">
+              <div class="post-img"><img src="img/portal/no-image.png" class="img-fluid" alt=""></div>
+              <span class="post-date"> {{$prestasi -> judul}} </span>
+              <h3 class="post-title">p</h3>
+              <a href="#" class="mt-auto btn btn-primary"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+            </div>
           </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4 mt-2 mb-3">
-          <div class="post-box">
-            <div class="post-img"><img src="img/portal/no-image.png" class="img-fluid" alt=""></div>
-            <span class="post-date">December 08, 2021</span>
-            <h3 class="post-title">At Kintsugi HQ. Its a beauty piece of art isn’t it? And its not finished yet so stay tune folks!</h3>
-            <a href="#" class="btn btn-primary mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-
-        <div class="col-sm-6 col-md-4 mt-2 mb-3">
-          <div class="post-box">
-            <div class="post-img"><img src="img/portal/no-image.png" class="img-fluid" alt=""></div>
-            <span class="post-date">November 05, 2021</span>
-            <h3 class="post-title">Sore di Kintsugi diisi oleh lagu-lagu John Mayer, Alex Turner dalam album Submarine dan lagu-lagu lainnya, tentunya waktu itu juga ditemani dengan segelas Cold Portamento untuk melengkapi keseruan acara hari itu.</h3>
-            <a href="#" class="mt-auto btn btn-primary"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
+      </div>
+    </div>
+      @endforeach
         <div class="col-sm text-center mb-4 mt-5">
           <a href="#" class="btn btn-outline-primary"> Tampilkan Semua Prestasi </a>
         </div>
       </div>
     </div>
 {{-- End Prestasi --}}
-
 @endsection
