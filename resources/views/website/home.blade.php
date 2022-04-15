@@ -56,7 +56,7 @@
         <div class="card-body">
           <h5 class="card-title">{{$berita -> judul}}</h5>
           <p class="card-text"> {{$berita -> excerpt}} </p>
-          <a href="#" class="btn btn-outline-primary"> Read More</a>
+          <a href="/berita/{{$berita -> slug}}" class="btn btn-outline-primary"> Read More</a>
           <hr class="hr-content">
           <p class="card-text"><small class="text-muted">{{$berita -> created_at}}</small></p>
         </div>
@@ -75,19 +75,19 @@
       <header class="section-header">
         <p>Prestasi</p>
       </header>
-      @foreach ($prestasis as $prestasi)
+      {{-- @foreach ($prestasis as $prestasi) --}}
       <div class="container recent-blog-posts mt-3 mb-5">
           <div class="col-sm-6 col-md-4 mt-2 mb-3">
             <div class="post-box">
               <div class="post-img"><img src="img/portal/no-image.png" class="img-fluid" alt=""></div>
-              <span class="post-date"> {{$prestasi -> judul}} </span>
+              <span class="post-date"> Judul </span>
               <h3 class="post-title">p</h3>
               <a href="#" class="mt-auto btn btn-primary"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
       </div>
     </div>
-      @endforeach
+      {{-- @endforeach --}}
         <div class="col-sm text-center mb-4 mt-5">
           <a href="#" class="btn btn-outline-primary"> Tampilkan Semua Prestasi </a>
         </div>
