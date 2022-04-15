@@ -10,11 +10,9 @@ class PrestasiController extends Controller
     public function index()
     {   
         $prestasis = Prestasi::paginate(3);
-        return view('website.home',
-        [
-            'prestasis'=>$prestasis,
-            "title"=> "Home",
-        ]);
+        return view ('website.home',[
+            "title" => "Home"
+        ], compact('prestasis'));
     }
 
     // public function berita()

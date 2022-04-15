@@ -33,8 +33,9 @@ Route::get('/', function () {
 // });
 
 
-Route::get('/beranda', [HomeController::class, 'index']);
-Route::get('/beranda', [HomeController::class, 'prestasi']);
+Route::get('/beranda', [BeritaController::class, 'index']);
+// Route::get('/beranda', [PrestasiController::class, 'index']);
+Route::get('/beranda', [BeritaController::class, 'prestasi']);
 // Route::get('/berita/{berita:slug}', [HomeController::class, 'show']);
 
 
