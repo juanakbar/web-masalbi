@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BeritaController;
-use App\Http\Controllers\PrestasiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,27 +14,15 @@ use App\Http\Controllers\PrestasiController;
 */
 
 Route::get('/', function () {
-    return view('portal');
+    return view('welcome');
 });
 
-// Route::get('/beranda', function () {
-//     return view('website.home',[
-//         "title"=>"Home",
-//     ]);
-// });
+Route::get('/beranda', function(){
+    return view( 'beranda');
+})->name('beranda');
 
-// Route::get('/beranda/berita', function () {
-//     return view('website.berita', [
-//         "title" => "Berita"
-//     ] );
-// });
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-
-Route::get('/beranda', [BeritaController::class, 'index']);
-Route::get('/beranda/berita', [BeritaController::class, 'berita']);
-Route::get('/berita/{berita:slug}', [BeritaController::class, 'show']);
-
-
-// Route::get('/beranda', [BeritaController::class, 'prestasi']);
-// Route::get('/beranda/prestasi', [PrestasiController::class, 'prestasi']);
-// Route::get('/berita/{prestasi:slug}', [PrestasiController::class, 'show']);
+require __DIR__.'/auth.php';
