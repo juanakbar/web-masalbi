@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Models\User;
 use App\Models\Berita;
 use Illuminate\Http\Request;
 
@@ -23,7 +24,7 @@ class BeritaController extends Controller
         return view('website.berita',
         [
             'beritas'=>Berita::all(),
-            "title"=> "Home",
+            "title" => "Home",
         ]);
     }
     
