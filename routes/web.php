@@ -2,21 +2,15 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BeritaController;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use App\Http\Controllers\ProfileController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('portal');
 });
+
+// Route::get('/beranda/sejarag', function(){
+//     return view('')
+// });
 
 
 Route::get('/dashboard', function () {
@@ -25,6 +19,8 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 Route::get('/beranda', [BeritaController::class, 'index']);
+Route::get('/profile/sejarah ', [ProfileController::class, 'index'])->name('sejarah');
+
 // Route::get('/beranda', [PrestasiController::class, 'index']);
 // Route::get('/beranda', [BeritaController::class, 'prestasi']);
 // Route::get('/berita/{berita:slug}', [HomeController::class, 'show']);
