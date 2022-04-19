@@ -1,92 +1,119 @@
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap");
 
-    body {
-        font-family: Poppins;
-    }
+body {
+    font-family: Poppins;
+}
 
-    .nav-link{
-        font-weight: 400;
-    }
+.nav-link {
+    font-weight: 400;
+}
 
-    .nav-item {
-        margin-right: 2px;
-    }
+.nav-item {
+    margin-right: 2px;
+}
 
-    @media all and (min-width: 992px) {
-        .navbar .dropdown-menu-end{ right:0; left: auto;  }
-        .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
-        .navbar .nav-item:hover .nav-link{ color: rgb(3, 3, 3);  }
-        .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
-        .navbar .dropdown-menu.fade-up{ top:180%;  }
-        .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
-        .carousel-item{
-            height: 100vh;
-            min-height: 300px;
-            background: no-repeat scroll center scroll;
-            background-size: cover;
-        }
-    }
-    
-    @media (min-width: 992px) {
-        .carousel-item{
-            height: 100vh;
-            min-height: 300px;
-            background: no-repeat scroll center scroll;
-            background-size: cover;
-        }
-
-        .carousel-caption{
-            bottom: 180px;
-            padding-left: 100px;
-            padding-right: 100px;
-        }
-     }
-
-    .carousel-item::before{
-        content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
+@media all and (min-width: 992px) {
+    .navbar .dropdown-menu-end {
         right: 0;
-        background: rgb(238,174,202);
-        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-        opacity: 50%;
+        left: auto;
     }
-    .carousel-caption{
-        
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.3s;
+        margin-top: 0;
+    }
+    .navbar .nav-item:hover .nav-link {
+        color: rgb(3, 3, 3);
+    }
+    .navbar .dropdown-menu.fade-down {
+        top: 80%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+    }
+    .navbar .dropdown-menu.fade-up {
+        top: 180%;
+    }
+    .navbar .nav-item:hover .dropdown-menu {
+        transition: 0.3s;
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+        transform: rotateX(0deg);
+    }
+    .carousel-item {
+        height: 100vh;
+        min-height: 300px;
+        background: no-repeat scroll center scroll;
+        background-size: cover;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-item {
+        height: 100vh;
+        min-height: 300px;
+        background: no-repeat scroll center scroll;
+        background-size: cover;
     }
 
-     .carousel-caption h5{
-         font-size: 32px;
-         font-weight: 600;
-     }
-
-    .judul {
-        text-align: center;
-        border-bottom: 5px solid wheat;
-        width: 50%;
-        margin: auto;
-        margin-top: 150px;
-        border-radius: 0 0 10px 10px;
+    .carousel-caption {
+        bottom: 180px;
+        padding-left: 100px;
+        padding-right: 100px;
     }
+}
 
-    .card-body{
-        background: rgba( 255, 255, 255, 0.25 );
-        backdrop-filter: blur( 4px );
-        -webkit-backdrop-filter: blur( 4px );
-        border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
-    }
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+    );
+    opacity: 50%;
+}
+rm .carousel-caption {
+}
 
-    .card{
-        transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-        cursor: pointer;
-    }
+.carousel-caption h5 {
+    font-size: 32px;
+    font-weight: 600;
+}
 
-    .card:hover{
-        transform: scale(1.05);
-        box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-    }
+.judul {
+    text-align: center;
+    border-bottom: 5px solid wheat;
+    width: 50%;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 0 0 10px 10px;
+}
 
+.card-body {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.card {
+    transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+        0.3s box-shadow,
+        0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
